@@ -2,9 +2,21 @@
 
 ## Proyecto Final Grupo
 
-### Rafael Cala González, Jorge Acevedo de León, David Valverde Gómez
+## Autores
+-  Rafael Cala González - alu0101121901
+-  Jorge Acevedo de León - alu0101123622
+-  David Valverde Gómez - alu0101100296
 
-## Introducción
+
+## Índice   
+1. [Introducción](#id1)
+2. [Cuestiones importantes para el uso](#id2)
+3. [Escenas](#id3)
+4. [Hitos de programación](#id4)
+5. [Aspectos a destacar](#id5)
+6. [Acta de los acuerdos respecto al trabajo en equipo](#id6)
+
+## Introducción<a name="id1"></a>
 
 El **prototipo final** para la asignatura consiste en un juego en **Realidad Virtual** basado en la idea de las populares *scape room*, donde se está encerrado en una habitación y se deben resolver diferentes enigmas y desafíos para conseguir la combinación de la puerta que nos permitirá salir de ella. No obstante, no se ha seguido el diseño de las Scape Room clásicas, sino que hemos optado por hacer el diseño de los mapas enfocados a que cada sala te transporte a un lugar completamente diferente, a fin de darle variedad al juego y lograr que cada diseño se adecúe con lo que se quiere resolver.
 
@@ -16,7 +28,7 @@ Cada sala contará con un pequeño poema a modo de pista que indicará al usuari
 
 Un punto que vale la pena reseñar es que se ha tratado en todo momento de mantener un equilibrio entre seguir una intuitiva y orientativa interfaz de usuario y ser fiel a la idea de las Scape Room, donde prevalecen los enigmas y los rompecabezas. Así pues, cada detalle introducido en el juego trata de lograr exhaustivamente lo recientemente comentado.
 
-## Cuestiones importantes para el uso
+## Cuestiones importantes para el uso<a name="id2"></a>
 
 Se ha optado por utilizar la interfaz más natural posible para la interacción con el universo del juego; obligar al usuario a hacer uso de interfaces físicas para jugar dificulta en gran medida su capacidad de inmersión. Se busca que no solo sea sencillo, sino también accesible, por lo que la decisión final ha sido focalizar toda la interacción en el uso de la retícula, evitando así que el usuario se vea anclado al plano terrenal por un mando que sostener en la manos.
 
@@ -26,7 +38,7 @@ De igual manera, para disfrutar completamente la experiencia, es bastante conven
 
 Otro aspecto importante a comentar es la necesidad del uso del micrófono, para lo cual se pide permisos de grabación al inicio de la aplicación.
 
-## Escenas
+## Escenas<a name="id3"></a>
 
 ### Menú de inicio
 
@@ -40,11 +52,9 @@ La **escena principal** del juego tiene lugar en un bosque un tanto tétrico dur
 
 ![Gif](Gifs/salaCentral1.gif)
 
-
 Se tiene un total de **cuatro puertas** que, más la puerta final, proporcionarán las 5 letras que forman la clave necesaria para superar el juego.
 
 ![Gif](Gifs/salaCentral2.gif)
-
 
 Como se venía diciendo, tras finalizar las cuatro salas, la palabra quedará visible y aparecerá la puerta final. Solo quedará decir en alto dicha palabra.
 
@@ -52,13 +62,12 @@ Como se venía diciendo, tras finalizar las cuatro salas, la palabra quedará vi
 
 ### Recolección de libros
 
-El jugador aparece en medio de una biblioteca, donde la primera pista le indica que debe recoger todos los libros rojos dispersos por la habitación. Para ayudar en la búsqueda, se tiene un contador que indica los restantes. 
+El jugador aparece en medio de una biblioteca, donde la primera pista le indica que debe recoger todos los libros rojos dispersos por la habitación. Para ayudar en la búsqueda, se tiene un contador que indica los restantes.
 
 ![Gif](Gifs/recoleccionLibros1.gif)
 Una vez recogidos todos los libros, una de las estanterías se oculta para mostrar la puerta de retorno a la sala principal.
 
 ![Gif](Gifs/recoleccionLibros2.gif)
-
 
 ### Búsqueda de estrellas
 
@@ -74,11 +83,9 @@ Se encuentra al jugador en medio del espacio, rodeado de figuras con forma de co
 
 ![Gif](Gifs/figurasColores1.gif)
 
-
 Una vez completado, todas las figuras se teñirán de un color verde y aparecerá la puerta de salida.
 
 ![Gif](Gifs/figurasColores2.gif)
-
 
 ### Resolución de adivinanzas
 
@@ -90,10 +97,39 @@ Tras obtener la solución de la adivinanza, se debe mirar hacia el ojo y pronunc
 
 ![Gif](Gifs/adivinanza.gif)
 
-## Hitos de programación
+## Hitos de programación<a name="id4"></a>
+
+En relación a los contenidos que se han impartido, se han incluido los siguientes hitos:
+
+### Modificación de las características físicas de los objetos
+
+En diferentes salas se han implementado funciones que cambian cierta característica física de algunos objetos, como su color, o que directamente destruyen el objeto. 
 
 
-## Aspectos a destacar
+### Eventos
+
+Se implementan eventos que 
+### Uso de Google VR
+
+Como es lógico, se ha hecho uso de Google VR para el desarrollo del prototipo. En adición, se han modificado propiedades de la retícula a fin de 
+### Animaciones
+
+![Gif](Gifs/puertaAnimacion.gif)
+
+
+### Iluminación
+
+La iluminación juega un papel importante en algunas de las escenas. El caso más claro es el mapa de la playa, donde las constelaciones están creadas a partir de puntos de luz, de modo que los que forman la Osa Mayor, son modificados una vez encontrada dicha constelación. Así mismo, se utilizan hogueras y otros puntos de luz en el resto de mapas que ayudan a mejorar la experiencia.
+
+### Sensores
+  Para finalizar este apartado, cabe destacar el uso de sensores como:
+  -  Brújula
+  -  Micrófono (Reconocimiento de voz)
+  -  Salida de audio (Reproducción de sonidos)
+  
+  De esto se hablará en detalle en el apartado siguiente.
+
+## Aspectos a destacar<a name="id5"></a>
 
 En este proyecto destacan diferentes aspectos que se consideran de interés para la experiencia de usuario en una aplicación de *Realidad Virtual*:
 
@@ -109,7 +145,14 @@ En este proyecto destacan diferentes aspectos que se consideran de interés para
 
 Además, se han incluido diversos **sensores** trabajados a lo largo de la sección de *Interfaces Multimodales*:
 
-* La **brújula** del dispositivo móvil es utilizada en la sala de *Búsqueda de estrellas*, indica al usuario hacia dónde está mirando y le ayuda a localizar la *Osa Mayor* que se encuentra en el *norte*.
+* La **brújula** del dispositivo móvil es utilizada en la sala de *Búsqueda de estrellas*, indica al usuario hacia dónde está mirando y le ayuda a localizar la *Osa Mayor* que se encuentra en el *norte*. Esto se ha conseguido gracias a *Input.compass*.
+
+* Se ha implementado la **reproducción de sonidos** en todas las salas, bien como sonido ambiente o bien activados por la consecución de alguno de los objetivos propuestos. Esto ha sido posible gracias al elemento *Audio Source*, que ha sido añadido a diferentes objetos en todas las escenas, además de los *Audio Clips* que definen el sonido a reproducir.
+
+![Imagen](Imagenes/audio1.png)
+![Imagen](Imagenes/audio2.png)
+
+
 * El **reconocimiento de voz** se utiliza en diversos momentos del juego:
   - En la sala de *Resolución de adivinanzas* se requiere al jugador que dia en voz alta la respuesta, esto será transformado a texto y se verificará si es la respuesta.
   - En la *sala principal*, una vez superados todos los desafíos y aparezca la **puerta final**, la clave para abrirla también debe ser dicha en voz alta. 
@@ -117,6 +160,6 @@ Además, se han incluido diversos **sensores** trabajados a lo largo de la secci
 Cabe destacar que, dado que el reconocimiento de voz visto en clase (*Keyword Recognizer*) utiliza una librería de Windows, no es posible implementarlo en una aplicación móvil, por lo que se ha utilizado la librería *SpeechToText*, que permite convertir la voz a texto (y viceversa) tanto en dispositivos **Android** como **IOS**. 
 
 
-## Acta de los acuerdos respecto al trabajo en equipo
+## Acta de los acuerdos respecto al trabajo en equipo<a name="id6"></a>
 
 
