@@ -38,31 +38,33 @@ La primera escena que vemos al abrir el juego muestra un **menú inicial** que p
 
 La **escena principal** del juego tiene lugar en un bosque un tanto tétrico durante la noche, se ve una pequeña *fogata* que aporta luz a la escena y se aprecian las **puertas** que dirigirán a cada desafío, además de la *pista* principal del juego, que indica que se deben realizar todos los desafíos para conseguir la clave y que aparezca la **puerta final**.
 
-[![Image from Gyazo](https://i.gyazo.com/67fe3373a94cae284c679d66f57595bc.gif)](https://gyazo.com/67fe3373a94cae284c679d66f57595bc)
+![Gif](Gifs/salaCentral1.gif)
+
 
 Se tiene un total de **cuatro puertas** que, más la puerta final, proporcionarán las 5 letras que forman la clave necesaria para superar el juego.
 
-[![Image from Gyazo](https://i.gyazo.com/a6eec0f6b39dbe29cf8fd8c0053114fd.gif)](https://gyazo.com/a6eec0f6b39dbe29cf8fd8c0053114fd)
+![Gif](Gifs/salaCentral2.gif)
+
 
 Como se venía diciendo, tras finalizar las cuatro salas, la palabra quedará visible y aparecerá la puerta final. Solo quedará decir en alto dicha palabra.
 
-[![Image from Gyazo](https://i.gyazo.com/60c5ba03de649ebe1742566f323c0146.gif)](https://gyazo.com/60c5ba03de649ebe1742566f323c0146)
+![Gif](Gifs/salaCentral3.gif)
 
 ### Recolección de libros
 
 El jugador aparece en medio de una biblioteca, donde la primera pista le indica que debe recoger todos los libros rojos dispersos por la habitación. Para ayudar en la búsqueda, se tiene un contador que indica los restantes. 
 
-[![Image from Gyazo](https://i.gyazo.com/96d5e1ac60cae73fb4c3f97605a8ad0b.gif)](https://gyazo.com/96d5e1ac60cae73fb4c3f97605a8ad0b)
-
+![Gif](Gifs/recoleccionLibros1.gif)
 Una vez recogidos todos los libros, una de las estanterías se oculta para mostrar la puerta de retorno a la sala principal.
 
-[![Image from Gyazo](https://i.gyazo.com/80e628ce4ee6f7b2f8429daf405aaed2.gif)](https://gyazo.com/80e628ce4ee6f7b2f8429daf405aaed2)
+![Gif](Gifs/recoleccionLibros2.gif)
+
 
 ### Búsqueda de estrellas
 
 Se muestra una playa durante la noche, con una pista en la arena que incita al jugador a buscar las estrellas en el norte. El jugador contará con una **brújula** que le indicará hacia que sentido está mirando, lo que le ayudará a encontrar el norte y, al levantar la vista al cielo, divisará, entre otras constelaciones, la *Osa Mayor*, la cual, una vez apuntada con la retícula, se iluminará de rojo y dará paso a la aparición de la puerta de regreso.
 
-[![Image from Gyazo](https://i.gyazo.com/4e83b55b0c19d45c01a4cd7c0b649437.gif)](https://gyazo.com/4e83b55b0c19d45c01a4cd7c0b649437)
+![Gif](Gifs/busquedaEstrellas.gif)
 
 > **NOTA**: Este gif ha sido grabado desde una ejecución en ordenador, por lo que evidentemente la brújula no funciona correctamente.
 
@@ -70,11 +72,13 @@ Se muestra una playa durante la noche, con una pista en la arena que incita al j
 
 Se encuentra al jugador en medio del espacio, rodeado de figuras con forma de corazón, estrella y diamante, todas carentes de color. Se tienen 3 figuras, una de cada tipo y cada una de un color; el jugador debe 'tintar' la retícula con uno de estos colores y pintar cada una de las figuras en blanco del color que corresponda, respetando las equivalencias de las figuras grandes.
 
-[![Image from Gyazo](https://i.gyazo.com/ac9246f35ba555efc8935ca00722f10e.gif)](https://gyazo.com/ac9246f35ba555efc8935ca00722f10e)
+![Gif](Gifs/figurasColores1.gif)
+
 
 Una vez completado, todas las figuras se teñirán de un color verde y aparecerá la puerta de salida.
 
-[![Image from Gyazo](https://i.gyazo.com/06590c9b26078a2aa9b644a211f2e43e.gif)](https://gyazo.com/06590c9b26078a2aa9b644a211f2e43e)
+![Gif](Gifs/figurasColores2.gif)
+
 
 ### Resolución de adivinanzas
 
@@ -84,7 +88,7 @@ Esto puede resultar un poco confuso en un primer momento, hasta que el usuario b
 
 Tras obtener la solución de la adivinanza, se debe mirar hacia el ojo y pronunciar en voz alta la respuesta. Si es correcta, el ojo desaparecerá y se activará la puerta de regreso.
 
-[![Image from Gyazo](https://i.gyazo.com/1cf064645713d84bba6d7b0bc673672c.gif)](https://gyazo.com/1cf064645713d84bba6d7b0bc673672c)
+![Gif](Gifs/adivinanza.gif)
 
 ## Hitos de programación
 
