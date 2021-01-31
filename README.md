@@ -103,23 +103,42 @@ En relación a los contenidos que se han impartido, se han incluido los siguient
 
 ### Modificación de las características físicas de los objetos
 
-En diferentes salas se han implementado funciones que cambian cierta característica física de algunos objetos, como su color, o que directamente destruyen el objeto. 
+En diferentes salas se han implementado funciones que cambian cierta característica física de algunos objetos, como su color, o que directamente destruyen el objeto. Los ejemplos más destacados de estos casos son:
+
+* La sala de **Figuras y colores**, en la que se deben *pintar* las figuras en blanco del color correspondiente. Esto es posible cambiando la propiedad **material.color** del componente *Renderer* del objeto en cuestión.
+
+* La sala de **Recolección de libros**, donde desaparecen los libros que son recolectados. Esto simplemente tiene lugar con la función **SetActive** de cada objeto, que es llamada con un valor *false* cuando el libro detecta un evento de tipo **OnPointerEnter**.
+
+* Además, aunque se hablará de esto más adelante, también se modifican ciertas características de **iluminación**, como por ejemplo la *intensidad y el color* de las estrellas relativas a la constelación *Osa Mayor* en la sala **Búsqueda de estrellas**. Esto es posible modificando los atributos **range** y **color** del componente *Light* de cada objeto.
 
 
 ### Eventos
 
-Se implementan eventos que 
+El uso de eventos es el pilar en que se sostenta este proyecto, pues toda acción a realizar debe hacerse apuntando la retícula hacia algún objeto o algún botón. Es por esto que los eventos predominantes son **OnPointerEnter** y **OnPointerExit**.
+
+* **OnPointerEnter** se utiliza para cualquier acción que se desee realizar con la retícula: activar las animaciones de las puertas, pulsar botones o acceder a cualquier objeto.
+
+* **OnPointerExit** se utiliza para activar las animaciones de cerrado de puertas, pues las puertas sólo se cerrarán cuando la retícula deje de apuntar hacia ellas.
+
+![Imagen](Imagenes/onPointerEnter.png)
+
+Como se aprecia en la imagen, estos eventos se utilizan mediante componentes *Event Trigger*.
+
 ### Uso de Google VR
 
-Como es lógico, se ha hecho uso de Google VR para el desarrollo del prototipo. En adición, se han modificado propiedades de la retícula a fin de 
+Como es lógico, se ha hecho uso de Google VR para el desarrollo del prototipo. En adición, se han modificado propiedades de la retícula a fin de mejorar la jugabilidad de la aplicación, como es el caso de la sala de **Figuras y colores**, donde la retícula cambia al color asignado actual, como si fuera un pincel.
+
 ### Animaciones
+
+Se han implementado animaciones para múltiples elementos del juego, entre ellos las puertas, el ojo, la luna, o el armario, entre algunos otros.
+Para cada uno de las animaciones, se implementa un componente *Animator*, en el que se definen las transiciones entre las animaciones definidas para cada objeto; esto se ve ejemplificado de forma clara en el gif que se adjunta a continuación, en el que se enseña el comportamiento del *Animator* de la puerta.
 
 ![Gif](Gifs/puertaAnimacion.gif)
 
 
 ### Iluminación
 
-La iluminación juega un papel importante en algunas de las escenas. El caso más claro es el mapa de la playa, donde las constelaciones están creadas a partir de puntos de luz, de modo que los que forman la Osa Mayor, son modificados una vez encontrada dicha constelación. Así mismo, se utilizan hogueras y otros puntos de luz en el resto de mapas que ayudan a mejorar la experiencia.
+La iluminación juega un papel importante en algunas de las escenas. El caso más claro es la sala de la **Búsqueda de estrellas**, donde las constelaciones están creadas a partir de puntos de luz, de modo que los que forman la Osa Mayor, son modificados una vez encontrada dicha constelación. Así mismo, se utilizan hogueras y otros puntos de luz en el resto de mapas que ayudan a mejorar la experiencia.
 
 ### Sensores
   Para finalizar este apartado, cabe destacar el uso de sensores como:
@@ -157,9 +176,34 @@ Además, se han incluido diversos **sensores** trabajados a lo largo de la secci
   - En la sala de *Resolución de adivinanzas* se requiere al jugador que dia en voz alta la respuesta, esto será transformado a texto y se verificará si es la respuesta.
   - En la *sala principal*, una vez superados todos los desafíos y aparezca la **puerta final**, la clave para abrirla también debe ser dicha en voz alta. 
 
-Cabe destacar que, dado que el reconocimiento de voz visto en clase (*Keyword Recognizer*) utiliza una librería de Windows, no es posible implementarlo en una aplicación móvil, por lo que se ha utilizado la librería *SpeechToText*, que permite convertir la voz a texto (y viceversa) tanto en dispositivos **Android** como **IOS**. 
+Cabe destacar que, dado que el reconocimiento de voz visto en clase (*Keyword Recognizer*) utiliza una librería de Windows, no es posible implementarlo en una aplicación móvil, por lo que se ha utilizado la librería *Speech And Text*, que permite convertir la voz a texto (y viceversa) tanto en dispositivos **Android** como **IOS**. 
 
 
 ## Acta de los acuerdos respecto al trabajo en equipo<a name="id6"></a>
 
+* David Valverde Gómez
 
+refactorizacion y mejora del codigo
+documentacion del codigo
+implementacion completa del reconocimiento de voz
+sonidos en la interaccion con objetos
+
+
+* Jorge Totiso Acevedo de León
+
+creacion e implementacion de las animaciones 
+diseño completo mapa adivinanza
+adicion de componentes gráficos que mejoran los diseños de los mapas
+sonidos en la interaccion con objetos
+
+
+
+* Rafael Cala González
+
+sonido ambiental de los mapas
+diseño inicial del mapa central
+Diseño del menú inicial
+
+* Tareas en común.
+  - Implementación de sonidos (ambientales y de interacción).
+  - 
