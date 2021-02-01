@@ -28,6 +28,8 @@ Cada sala contará con un pequeño poema a modo de pista que indicará al usuari
 
 Un punto que vale la pena reseñar es que se ha tratado en todo momento de mantener un equilibrio entre seguir una intuitiva y orientativa interfaz de usuario y ser fiel a la idea de las Scape Room, donde prevalecen los enigmas y los rompecabezas. Así pues, cada detalle introducido en el juego trata de lograr exhaustivamente lo recientemente comentado.
 
+> **NOTA**: En este repositorio se adjunta un video con una demostración de la ejecución del juego en un dispositivo móvil. Cabe destacar que dicho dispositivo presenta problemas previos con la brújula, razón por la que en dicha sala no funciona debidamente
+
 ## Cuestiones importantes para el uso<a name="id2"></a>
 
 Se ha optado por utilizar la interfaz más natural posible para la interacción con el universo del juego; obligar al usuario a hacer uso de interfaces físicas para jugar dificulta en gran medida su capacidad de inmersión. Se busca que no solo sea sencillo, sino también accesible, por lo que la decisión final ha sido focalizar toda la interacción en el uso de la retícula, evitando así que el usuario se vea anclado al plano terrenal por un mando que sostener en la manos.
@@ -162,6 +164,8 @@ En este proyecto destacan diferentes aspectos que se consideran de interés para
 
 * También se han implementado diferentes **sonidos**, tanto de fondo como cuando se cumple algún objetivo. 
 
+* Por último, se ha implementado un **indicador de carga** entre escenas, de manera que el usuario no piense que el juego se ha bloqueado porque tarde mucho en cargar las escenas.
+
 Además, se han incluido diversos **sensores** trabajados a lo largo de la sección de *Interfaces Multimodales*:
 
 * La **brújula** del dispositivo móvil es utilizada en la sala de *Búsqueda de estrellas*, indica al usuario hacia dónde está mirando y le ayuda a localizar la *Osa Mayor* que se encuentra en el *norte*. Esto se ha conseguido gracias a *Input.compass*.
@@ -181,29 +185,38 @@ Cabe destacar que, dado que el reconocimiento de voz visto en clase (*Keyword Re
 
 ## Acta de los acuerdos respecto al trabajo en equipo<a name="id6"></a>
 
-* David Valverde Gómez
+* David Valverde Gómez.
 
-refactorizacion y mejora del codigo
-documentacion del codigo
-implementacion completa del reconocimiento de voz
-sonidos en la interaccion con objetos
+  - Refactorización y mejora del código.
+  - Documentación del código.
+  - Implementacion completa del reconocimiento de voz.
+  - Implementación de la parte del final del juego.
+  - Implementación de la opción de salir del juego.
+  - Adición de constelaciones a la sala de la búsqueda de estrellas.
 
+* Jorge Acevedo de León.
 
-* Jorge Totiso Acevedo de León
+  - Creación e implementación de las animaciones.
+  - Diseño completo de la sala de la Adivinanza.
+  - Adición de componentes gráficos que mejoran los diseños de los mapas.
+  - Búsqueda de *assets* para la mejora del diseño de cada sala.
+  - Adición de constelaciones a la sala de la búsqueda de estrellas.
+  - Implementación del *progress tracking* (progreso entre escenas).
 
-creacion e implementacion de las animaciones 
-diseño completo mapa adivinanza
-adicion de componentes gráficos que mejoran los diseños de los mapas
-sonidos en la interaccion con objetos
+* Rafael Cala González.
 
-
-
-* Rafael Cala González
-
-sonido ambiental de los mapas
-diseño inicial del mapa central
-Diseño del menú inicial
+  - Diseño inicial del mapa central.
+  - Diseño base e implementación del menú inicial.
+  - Diseño completo de la sala Figuras y Colores.
+  - Diseño base de la sala Búsqueda de las estrellas.
+  - Búsqueda de *assets* para la mejora del diseño de cada sala.
+  - Implementación inicial de la carga de las escenas.
 
 * Tareas en común.
+
   - Implementación de sonidos (ambientales y de interacción).
-  - 
+  - Diseño conceptual del estilo del juego.
+  - Diseño conceptual de cada sala.
+  - Desarrollo de las pistas de cada mapa.
+  - Idea conceptual del prototipo (tipo Scape Room).
+  - Implementación del indicador de carga entre escenas.
