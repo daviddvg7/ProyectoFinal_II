@@ -123,6 +123,8 @@ El uso de eventos es el pilar en que se sostenta este proyecto, pues toda acció
 * **OnPointerExit** se utiliza para activar las animaciones de cerrado de puertas, pues las puertas sólo se cerrarán cuando la retícula deje de apuntar hacia ellas.
 
 ![Imagen](Imagenes/onPointerEnter.png)
+![Imagen](Imagenes/onPointerExit.png)
+
 
 Como se aprecia en la imagen, estos eventos se utilizan mediante componentes *Event Trigger*.
 
