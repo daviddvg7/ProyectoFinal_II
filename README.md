@@ -28,7 +28,7 @@ Cada sala contará con un pequeño poema a modo de pista que indicará al usuari
 
 Un punto que vale la pena reseñar es que se ha tratado en todo momento de mantener un equilibrio entre seguir una intuitiva y orientativa interfaz de usuario y ser fiel a la idea de las Scape Room, donde prevalecen los enigmas y los rompecabezas. Así pues, cada detalle introducido en el juego trata de lograr exhaustivamente lo recientemente comentado.
 
-> **NOTA**: En este repositorio se adjunta un video con una demostración de la ejecución del juego en un dispositivo móvil. Cabe destacar que dicho dispositivo presenta problemas previos con la brújula, razón por la que en dicha sala no funciona debidamente
+> **NOTA**: En este [enlace](https://drive.google.com/file/d/1xoUYFmYEmt6RAa7vzsESO7cgaL7NAXec/view?usp=sharing) se adjunta un video con una demostración de la ejecución del juego en un dispositivo móvil. Cabe destacar que dicho dispositivo presenta problemas previos con la brújula, razón por la que en dicha sala no funciona debidamente
 
 ## Cuestiones importantes para el uso<a name="id2"></a>
 
